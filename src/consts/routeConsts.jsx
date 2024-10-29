@@ -1,5 +1,5 @@
 export const RoutingConfig = {
   ROOT: '/',
-  GAMES: 'games',
+  GAMES: '/games',
   404: '*'
 }

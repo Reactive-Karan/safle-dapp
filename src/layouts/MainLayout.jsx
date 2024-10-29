@@ -1,4 +1,3 @@
-import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
 import { useTheme } from '../contexts/ThemeProvider'
 import './MainLayout.scss'
@@ -9,7 +8,6 @@ const MainLayout = ({ children }) => {
     <div className="main-layout">
       <Navbar className={isDarkMode ? 'dark' : ''} />
       <div className="main-content-wrapper">{children}</div>
-      <Footer />
     </div>
   )
 }

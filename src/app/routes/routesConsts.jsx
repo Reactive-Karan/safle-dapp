@@ -1,20 +1,32 @@
 import { RoutingConfig } from '../../consts/routeConsts'
-import { GameTable, Home } from './lazyComponents'
+import MainLayout from '../../layouts/MainLayout'
+import RequireAuth from '../requireAuth/RequireAuth'
+import { GameTable, Home, PageNotFound } from './lazyComponents'
 
 const { createBrowserRouter } = require('react-router-dom')
 
 const router = createBrowserRouter([
   {
     path: RoutingConfig.ROOT,
-    element: <Home />
+    element: (
+      <MainLayout>
+        <Home />
+      </MainLayout>
+    )
   },
   {
     path: RoutingConfig.GAMES,
-    element: <GameTable />
+    element: (
+      <MainLayout>
+        <RequireAuth>
+          <GameTable />
+        </RequireAuth>
+      </MainLayout>
+    )
   },
   {
     path: RoutingConfig[404],
-    element: <h1>Page not found</h1>
+    element: <PageNotFound />
   }
 ])
 
