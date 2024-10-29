@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Table, Input } from 'antd'
+import { Table, Input, Flex } from 'antd'
 import games from '../../data/gamesData.json'
+import './GameTable.scss'
 
 const { Search } = Input
 
@@ -29,13 +30,20 @@ const GameTable = () => {
   ]
 
   return (
-    <div>
-      <Search
-        placeholder="Search games"
-        onChange={(e) => setSearchTerm(e.target.value)}
-        style={{ marginBottom: 16 }}
-      />
-      <Table columns={columns} dataSource={filteredGames} rowKey="name" />
+    <div className="game-table-parent">
+      <Flex vertical align="center" justify="center" className="game-table-container">
+        <div className="game-search-bar">
+          <Search placeholder="Search games" onChange={(e) => setSearchTerm(e.target.value)} />
+        </div>
+        <Table
+          bordered
+          className="game-table-wrapper"
+          scroll={{ x: 1024 }}
+          columns={columns}
+          dataSource={filteredGames}
+          rowKey="name"
+        />
+      </Flex>
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useEthers } from '@usedapp/core'
 import { ethers } from 'ethers'
-import { Button, Flex, message, Tooltip } from 'antd'
+import { Flex, message, Tooltip } from 'antd'
 import { DisconnectOutlined, UserOutlined } from '@ant-design/icons'
 import './Wallet.scss'
+import Button from '../button'
 
 const Wallet = () => {
   const { activateBrowserWallet, deactivate, account, library } = useEthers()
@@ -26,7 +27,7 @@ const Wallet = () => {
   }
 
   return (
-    <Flex className="wallet-btn-wrapper">
+    <Button>
       {account ? (
         <Flex>
           <Tooltip
@@ -38,8 +39,8 @@ const Wallet = () => {
                 <p>
                   <strong>Balance:</strong> {balance} ETH
                 </p>
-                <Button onClick={deactivate} icon={<DisconnectOutlined />}>
-                  Disconnect Wallet
+                <Button variant="secondary" onClick={deactivate}>
+                  <DisconnectOutlined /> Disconnect Wallet
                 </Button>
               </Flex>
             }
@@ -50,7 +51,7 @@ const Wallet = () => {
       ) : (
         <span onClick={connectWallet}>Connect Wallet</span>
       )}
-    </Flex>
+    </Button>
   )
 }
 

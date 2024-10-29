@@ -3,15 +3,19 @@ import App from './app/App'
 import reportWebVitals from './reportWebVitals'
 import DappProvider from './contexts/DappProvider'
 import { ThemeProvider } from './contexts/ThemeProvider'
+import { Suspense } from 'react'
 import './index.scss'
+import { Spin } from 'antd'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <ThemeProvider>
-    <DappProvider>
-      <App />
-    </DappProvider>
-  </ThemeProvider>
+  <Suspense fallback={<Spin />}>
+    <ThemeProvider>
+      <DappProvider>
+        <App />
+      </DappProvider>
+    </ThemeProvider>
+  </Suspense>
 )
 
 // If you want to start measuring performance in your app, pass a function

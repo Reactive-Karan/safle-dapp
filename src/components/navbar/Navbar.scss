@@ -29,41 +29,12 @@
   cursor: pointer;
 }
 
-.nav-link {
-  z-index: 1;
-  color: inherit;
-  background-color: inherit;
-  padding: 10px 20px;
-  transition: all 0.3s;
-  border-radius: 20px;
-
-  background: linear-gradient(45deg, #e9ddf04e 0, #ffffff 50%, #858585 100%);
-  border: none;
-  font-size: 16px;
-  font-family: sans-serif;
-  cursor: pointer;
-
-  &:hover {
-    color: black;
-    background-position: 100% 0;
-  }
-}
-
 // ======================================================================================================================//
 // ============================================== Dark mode styles ======================================================//
 // ======================================================================================================================//
 
 body.dark-mode {
   .header {
-    background: rgba(7, 24, 56, 0.8);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  }
-
-  .nav-link {
-    background: linear-gradient(45deg, #590f87 0, #ff0076 50%, #590f87 100%);
-    &:hover {
-      color: #fff;
-      background-position: 100% 0;
-    }
   }
 }
