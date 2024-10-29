@@ -1,0 +1,118 @@
+:root {
+  /* App level primary color */
+  --primary-color: #004a54;
+  --primary-dark-color: rgba(2, 65, 74, 1);
+  /* App level primary color */
+
+  /* color variables */
+  --pure-white: #ffffff;
+  --milk-white: #f3f8fb;
+  --rhino: #2b3674;
+  --silver: rgba(227, 231, 236, 1);
+  --silver-sand: #f8f9fa;
+  --aqua-mist: rgba(204, 219, 221, 1);
+  --peppermint: #dbf2eb;
+  --cyan-blue: #495057;
+  --dark-cyan: rgb(0, 74, 84);
+  --postal-red: rgb(244, 106, 106);
+  --alice-blue: rgba(243, 248, 251, 1);
+  --prusian-blue: rgba(3, 139, 181, 1);
+  --spring-green: rgba(51, 215, 151, 1);
+  --cerulean-blue: rgba(91, 115, 232, 1);
+  --forest-green: rgba(3, 84, 63, 1);
+  --midnight-gray: rgba(73, 80, 87, 1);
+  --success: rgba(67, 160, 71, 1);
+  --error: rgba(244, 67, 54, 1);
+  --pale-rose: rgba(255, 235, 238, 1);
+  --subtle-mint: rgba(232, 245, 233, 1);
+  --light-black: rgba(0, 0, 0, 0.1);
+  --teal: rgba(0, 74, 84, 0.4);
+  --deep-navy-blue: #2d3748;
+  --steel-blue: #74788d;
+  --aqua-marine: rgb(7, 188, 138);
+  --default-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
+    0 2px 7px 0 rgba(0, 0, 0, 0.1);
+  --electric-blue: #1a64af;
+  --light-sky-blue: rgb(159, 199, 255);
+  --cerulean: #038bb5;
+  --caribbean-blue: rgb(43, 172, 212);
+  --sky-blue: rgb(12, 177, 228);
+  --pale-sky: rgb(227, 231, 236);
+  --grayish-blue: #f5f6f8;
+  --baby-blue: rgb(240, 248, 253);
+  --transparent-gray: rgba(0, 0, 0, 0.02);
+  --light-azure: rgb(204, 219, 221);
+  --charcoal: rgb(70, 71, 72);
+  --light-slate-gray: rgb(156, 159, 166);
+  --light-steel: rgba(173, 181, 189, 1);
+  --pale-blue: rgba(237, 242, 247, 1);
+  --accent-blue: #5b73e8;
+  --ghost-white: #f8f9fa;
+  --pale-pink: rgba(254, 240, 240, 1);
+  --light-aqua: rgb(205, 255, 241);
+  --pale-aqua: rgba(219, 242, 235, 1);
+  --sandy-brown: rgba(241, 180, 76, 1);
+  --piggy-pink: rgba(253, 236, 243, 1);
+  --pinkish-red: rgba(232, 62, 140, 1);
+  --mint-cream: rgba(222, 247, 236, 1);
+  --golden-brown: rgba(177, 112, 0, 1);
+  --old-lace: rgba(254, 247, 237, 1);
+  --slate-gray: rgba(116, 120, 141, 1);
+  --dark-slate-gray: rgba(45, 55, 72, 1);
+  --bright-white: rgba(255, 255, 255, 1);
+  --fire-brick: rgba(155, 28, 28, 1);
+  --light-coral: rgba(239, 102, 91, 1);
+  --picton-blue: rgb(42, 182, 226);
+  --alice-blue: rgba(245, 246, 248, 1);
+  --white-smoke: #f9fafb;
+  --linen: #fef7ed;
+  --golden-brown: #b17000;
+  --cultured: rgba(244, 244, 244, 1);
+  --light-gray: rgba(217, 217, 217, 1);
+  --semi-transparent-gray: #80808099;
+  --gray-blue: #808b9a;
+  --dark-slate: #1f2a37;
+  --black-pearl: #101828;
+  --lavender-blue: #e8eaf6;
+  --cobalt-blue: #3f51b5;
+  --blush-pink: rgba(253, 232, 232, 1);
+  --lavender-blush: rgba(252, 232, 243, 1);
+  --dark-raspberry: rgba(153, 21, 75, 1);
+  --light-blue: rgba(239, 241, 253, 1);
+  --cultured-gray: rgba(248, 249, 250, 1);
+  --deep-teal: #02414a;
+  --midnight-blue: #0f223a1f;
+  --light-grey-white: #f8f9fa;
+  /* color variables */
+
+  /* screen varibles */
+  --primary-container-max-width: 1440px;
+  /* screen varibles */
+
+  /* Font style variables */
+  --font-style-normal: normal;
+  /* Font style variables */
+
+  /* Font size, font family and font weight variables */
+  --default-font-family: "Nunito sans", sans-serif;
+  --font-family-nunito: "Nunito sans";
+
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-40: 40px;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  /* Font size, font family and font weight variables */
+}
