@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useEthers } from '@usedapp/core'
 import { ethers } from 'ethers'
 import { Flex, message, Tooltip } from 'antd'
-import { DisconnectOutlined, UserOutlined } from '@ant-design/icons'
+import { DisconnectOutlined, UserOutlined, ApiOutlined } from '@ant-design/icons'
 import './Wallet.scss'
 import Button from '../button'
 import { useNavigate } from 'react-router-dom'
@@ -30,33 +30,63 @@ const Wallet = () => {
       message.error('Failed to connect wallet.')
     }
   }
+  const isMobile = window.innerWidth < 768 // Simple mobile detection
 
   return (
-    <Button>
-      {account ? (
-        <Flex>
-          <Tooltip
-            title={
-              <Flex vertical gap={20}>
+    <>
+      {isMobile ? (
+        <>
+          {account ? (
+            <Flex vertical>
+              <Flex>
+                <UserOutlined /> Profile
+              </Flex>
+              <div>
                 <p>
                   <strong>Wallet Address:</strong> {account}
                 </p>
                 <p>
                   <strong>Balance:</strong> {balance} ETH
                 </p>
-                <Button variant="secondary" onClick={deactivate}>
-                  <DisconnectOutlined /> Disconnect Wallet
-                </Button>
-              </Flex>
-            }
-          >
-            <UserOutlined /> Profile
-          </Tooltip>
-        </Flex>
+              </div>
+              <Button variant="secondary" onClick={deactivate}>
+                <DisconnectOutlined /> Disconnect Wallet
+              </Button>
+            </Flex>
+          ) : (
+            <Button variant="secondary" onClick={connectWallet}>
+              <ApiOutlined /> Connect Wallet
+            </Button>
+          )}
+        </>
       ) : (
-        <span onClick={connectWallet}>Connect Wallet</span>
+        <Button>
+          {account ? (
+            <Flex>
+              <Tooltip
+                title={
+                  <Flex vertical gap={20}>
+                    <p>
+                      <strong>Wallet Address:</strong> {account}
+                    </p>
+                    <p>
+                      <strong>Balance:</strong> {balance} ETH
+                    </p>
+                    <Button variant="secondary" onClick={deactivate}>
+                      <DisconnectOutlined /> Disconnect Wallet
+                    </Button>
+                  </Flex>
+                }
+              >
+                <UserOutlined /> Profile
+              </Tooltip>
+            </Flex>
+          ) : (
+            <span onClick={connectWallet}>Connect Wallet</span>
+          )}
+        </Button>
       )}
-    </Button>
+    </>
   )
 }
 

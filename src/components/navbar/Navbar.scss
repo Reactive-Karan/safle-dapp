@@ -1,5 +1,6 @@
 .header {
-  position: fixed;
+  position: sticky;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,6 +28,23 @@
 
 .logo {
   cursor: pointer;
+}
+
+.hamburger {
+  display: none; // Hide by default
+  cursor: pointer;
+  font-size: 24px; // Adjust size as needed
+}
+
+// Media query for small screens
+@media (max-width: 768px) {
+  .desktop-controls {
+    display: none; // Hide desktop controls
+  }
+
+  .hamburger {
+    display: block; // Show hamburger icon
+  }
 }
 
 // ======================================================================================================================//

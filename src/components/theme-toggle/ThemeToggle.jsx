@@ -3,15 +3,24 @@ import { useTheme } from '../../contexts/ThemeProvider'
 
 const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useTheme()
-
+  const isMobile = window.innerWidth < 768 // Simple mobile detection
   return (
     <div className="theme-toggle-btn" onClick={toggleTheme}>
       <SunOutlined
-        style={{ display: isDarkMode ? 'none' : 'block', fontSize: '24px', color: '#ffec40' }}
+        style={{
+          display: isDarkMode ? 'none' : 'block',
+          fontSize: !isMobile && '24px',
+          color: '#ffec40'
+        }}
       />
       <MoonOutlined
-        style={{ display: isDarkMode ? 'block' : 'none', fontSize: '24px', color: '#fff' }}
+        style={{
+          display: isDarkMode ? 'block' : 'none',
+          fontSize: !isMobile && '24px',
+          color: '#fff'
+        }}
       />
+      {isMobile && <span>Change theme</span>}
     </div>
   )
 }

@@ -8,6 +8,9 @@ const { Search } = Input
 const GameTable = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
+  // Filtering and sorting can be done with api calls,
+  // as of now we don't have any api call there is no point of storing
+  // into a state as we are already taking it from an json file
   const filteredGames = games.filter((game) =>
     game.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
@@ -32,6 +35,7 @@ const GameTable = () => {
   return (
     <div className="game-table-parent">
       <Flex vertical align="center" justify="center" className="game-table-container">
+        <h2>Trending Games</h2>
         <div className="game-search-bar">
           <Search placeholder="Search games" onChange={(e) => setSearchTerm(e.target.value)} />
         </div>

@@ -5,9 +5,26 @@ import Button from '../../components/button'
 import { AppstoreAddOutlined, GlobalOutlined } from '@ant-design/icons'
 import { useNavigate } from 'react-router-dom'
 import { RoutingConfig } from '../../consts/routeConsts'
+import WalletModal from '../../components/wallet-connect-modal/WalletModal'
+import { useState } from 'react'
+import { useEthers } from '@usedapp/core'
 
 const Home = () => {
   const navigate = useNavigate()
+  const { account, library } = useEthers()
+  const [walletModal, setWalletModal] = useState(false)
+
+  const closeWalletModal = () => {
+    setWalletModal(false)
+  }
+
+  const handleDiscoverMore = () => {
+    if (account && library) {
+      navigate(RoutingConfig.GAMES)
+    } else {
+      setWalletModal(true)
+    }
+  }
   return (
     <Flex justify={'space-around'} align="center" className="banner-container" wrap="wrap">
       <Flex justify="center" vertical align="left" gap={36} className="banner-text-wrapper">
@@ -19,7 +36,7 @@ const Home = () => {
         </p>
 
         <div>
-          <Button variant="primary" onClick={() => navigate(RoutingConfig.GAMES)}>
+          <Button variant="primary" onClick={() => handleDiscoverMore()}>
             <GlobalOutlined /> Discover Games
           </Button>
           <Button variant="secondary">
@@ -38,6 +55,8 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <WalletModal open={walletModal} onClose={closeWalletModal} />
     </Flex>
   )
 }
