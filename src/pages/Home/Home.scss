@@ -4,10 +4,10 @@
   padding: 10px;
   .banner-text-wrapper {
     .banner-text-heading {
-      font-size: 52px;
+      font-size: var(--font-size-52);
 
       .banner-nft-text {
-        color: rgba(255, 0, 118, 0.8);
+        color: var(--secondary-color);
       }
     }
   }
@@ -15,7 +15,7 @@
     img {
       border-radius: 50px;
       width: 100%;
-      box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+      box-shadow: var(--dark-box-shadow);
       transition: all 0.3s;
 
       &:hover {

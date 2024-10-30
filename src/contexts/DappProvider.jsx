@@ -1,15 +1,15 @@
-import { DAppProvider, Mainnet } from "@usedapp/core";
-import { getDefaultProvider } from "ethers";
+import { getDefaultProvider } from 'ethers'
+import { DAppProvider, Mainnet } from '@usedapp/core'
 
 const config = {
   readOnlyChainId: Mainnet.chainId,
   readOnlyUrls: {
-    [Mainnet.chainId]: getDefaultProvider("mainnet"),
-  },
-};
+    [Mainnet.chainId]: getDefaultProvider('mainnet')
+  }
+}
 
 const DappProvider = ({ children }) => {
-  return <DAppProvider config={config}>{children}</DAppProvider>;
-};
+  return <DAppProvider config={config}>{children}</DAppProvider>
+}
 
-export default DappProvider;
+export default DappProvider

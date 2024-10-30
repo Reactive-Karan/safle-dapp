@@ -1,8 +1,8 @@
 .wallet-connect-model {
   .ant-modal-content {
-    color: white;
-    background: rgba(71, 70, 70, 0.353);
+    color: var(--pure-white);
+    background: var(--glassy-bg);
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid var(--transparent-bg);
   }
 }

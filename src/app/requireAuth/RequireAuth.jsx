@@ -4,7 +4,6 @@ import { RoutingConfig } from '../../consts/routeConsts'
 
 const RequireAuth = ({ children }) => {
   const { account, library } = useEthers()
-  console.log(account, library)
   if (account && library) return children
   else return <Navigate to={RoutingConfig.ROOT} replace />
 }

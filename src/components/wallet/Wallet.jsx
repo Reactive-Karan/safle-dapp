@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react'
-import { useEthers } from '@usedapp/core'
 import { ethers } from 'ethers'
+import { useEthers } from '@usedapp/core'
+import { useState, useEffect } from 'react'
 import { Flex, message, Tooltip } from 'antd'
-import { DisconnectOutlined, UserOutlined, ApiOutlined } from '@ant-design/icons'
-import './Wallet.scss'
-import Button from '../button'
 import { useNavigate } from 'react-router-dom'
+import { DisconnectOutlined, UserOutlined, ApiOutlined } from '@ant-design/icons'
 import { RoutingConfig } from '../../consts/routeConsts'
+import Button from '../button'
 
 const Wallet = () => {
   const { activateBrowserWallet, deactivate, account, library } = useEthers()

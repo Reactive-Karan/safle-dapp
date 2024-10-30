@@ -1,12 +1,12 @@
 .footer {
   text-align: center;
   padding: 20px;
-  color: black;
+  color: var(--black);
   width: 100%;
 }
 
 body.dark-mode {
   .footer {
-    color: inherit;
+    color: var(--pure-white);
   }
 }

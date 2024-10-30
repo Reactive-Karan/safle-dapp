@@ -1,5 +1,6 @@
 import { SunOutlined, MoonOutlined } from '@ant-design/icons'
 import { useTheme } from '../../contexts/ThemeProvider'
+import './ThemeToggle.scss'
 
 const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useTheme()

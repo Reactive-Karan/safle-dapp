@@ -1,11 +1,10 @@
 .game-table-parent {
   width: 80%;
   margin-inline: auto;
-  // margin-top: 120px;
 
   .game-table-container {
     margin: 20px;
-    background: #1a1a1a1a; /* Light translucent background */
+    background: var(--translucent-bg);
     padding: 20px;
     border-radius: 24px 20px;
 
@@ -22,7 +21,7 @@
 
 body.dark-mode {
   .game-table-container {
-    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    background: var(--light-translucent-bg);
   }
 }
 

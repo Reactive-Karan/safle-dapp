@@ -54,7 +54,7 @@ const ParticlesBackground = () => {
         value: isDarkMode ? '#dddddd' : '#808080' // Particle color
       },
       links: {
-        color: isDarkMode ? '#dddddd' : '#808080',
+        color: isDarkMode ? '#dddddd' : '#808080', // Particle connecting line color
         distance: 150,
         enable: true,
         opacity: 0.5,

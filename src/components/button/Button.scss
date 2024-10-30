@@ -4,18 +4,18 @@
   padding: 10px 20px;
   transition: color 0.3s ease, background-position 0.3s ease;
   border-radius: 20px;
-  background: linear-gradient(45deg, #e9ddf04e 0%, #ffffff 50%, #858585 100%);
+  background: var(--primary-btn-bg);
   background-size: 200% 100%;
   background-position: 0 0;
   border: none;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   font-family: sans-serif;
   width: fit-content;
   cursor: pointer;
-  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--primary-box-shadow);
 
   &:hover {
-    color: black;
+    color: var(--black);
     background-position: 100% 0;
   }
 }
@@ -23,7 +23,7 @@
 .secondary-btn {
   position: relative;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   margin-left: 20px;
   transition: all 0.3s;
   text-decoration: none;
@@ -39,14 +39,14 @@
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: rgba(255, 0, 118, 0.8);
+    background-color: var(--secondary-color);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
   }
 
   &:hover {
-    color: rgba(255, 0, 118, 0.8);
+    color: var(--secondary-color);
 
     &::after {
       transform: scaleX(1);
@@ -60,33 +60,26 @@
 // ======================================================================================================================//
 
 body.dark-mode {
-  color: #ffffff;
+  color: var(--pure-white);
 }
 
 body.dark-mode {
   .primary-btn {
-    background: linear-gradient(
-      45deg,
-      rgba(255, 0, 118, 0.8) 0%,
-      #ff0076 30%,
-      #ff66c4 50%,
-      #590f87 80%,
-      #ffffff 100%
-    );
+    background: var(--primary-btn-dark-bg);
     background-size: 200% 100%;
     background-position: 0 0;
     transition: color 0.3s ease, background-position 0.3s ease;
-    box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: var(--primary-box-dark-shadow);
 
     &:hover {
-      color: #fff;
+      color: var(--pure-white);
       background-position: 100% 0;
     }
   }
 
   .secondary-btn {
     &:hover {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 }
