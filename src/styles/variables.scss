@@ -1,0 +1,46 @@
+:root {
+  /* App level primary color */
+  --primary-color: #071838;
+  --primary-btn-bg: linear-gradient(45deg, #e9ddf04e 0%, #ffffff 50%, #858585 100%);
+  --primary-btn-dark-bg: linear-gradient(
+    45deg,
+    rgba(255, 0, 118, 0.8) 0%,
+    #ff0076 30%,
+    #ff66c4 50%,
+    #590f87 80%,
+    #ffffff 100%
+  );
+  --black: #000000;
+  --pure-white: #ffffff;
+  --secondary-color: rgba(255, 0, 118, 0.8);
+  --navbar-header-bg: rgba(71, 70, 70, 0.353);
+  --transparent-bg: rgba(255, 255, 255, 0.2);
+  --transparent-dim-bg: rgba(255, 255, 255, 0.4);
+  --glassy-bg: rgba(71, 70, 70, 0.353);
+  --translucent-bg: #1a1a1a1a;
+  --light-translucent-bg: rgba(255, 255, 255, 0.1);
+  /* Box Shadow variables */
+
+  --primary-box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+  --primary-box-dark-shadow: 2px 1px 10px rgba(255, 255, 255, 0.3);
+  --dark-box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+  /* Font size, font family and font weight variables */
+  --default-font-family: 'Nunito sans', sans-serif;
+  --font-family-nunito: 'Nunito sans';
+
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-40: 40px;
+  --font-size-52: 52px;
+
+  /* Font size, font family and font weight variables */
+}

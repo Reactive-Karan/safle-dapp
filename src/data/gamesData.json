@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Crypto Clash",
+        "description": "Battle in the crypto arena",
+        "ranking": 1,
+        "totalPlayers": 5000
+    },
+    {
+        "name": "Ether Kingdoms",
+        "description": "Strategy and conquest game",
+        "ranking": 2,
+        "totalPlayers": 8000
+    },
+    {
+        "name": "EtherQuest",
+        "description": "An adventure game where players explore dungeons and earn tokens.",
+        "ranking": 4.5,
+        "totalPlayers": 12000
+    },
+    {
+        "name": "CryptoRacers",
+        "description": "A multiplayer racing game powered by blockchain rewards.",
+        "ranking": 4.2,
+        "totalPlayers": 8500
+    },
+    {
+        "name": "PixelVerse",
+        "description": "A pixel art world-building game with NFTs as assets.",
+        "ranking": 4.8,
+        "totalPlayers": 22000
+    },
+    {
+        "name": "DungeonDAO",
+        "description": "A decentralized dungeon crawler with DAO governance.",
+        "ranking": 4.0,
+        "totalPlayers": 6000
+    },
+    {
+        "name": "SpaceMiners",
+        "description": "Mine asteroids and planets for rare crypto resources.",
+        "ranking": 4.6,
+        "totalPlayers": 9000
+    },
+    {
+        "name": "CastleKings",
+        "description": "Medieval strategy game where players build castles and armies.",
+        "ranking": 3.9,
+        "totalPlayers": 7000
+    },
+    {
+        "name": "MetaMonsters",
+        "description": "Collect and train monsters as NFTs to battle other players.",
+        "ranking": 4.7,
+        "totalPlayers": 15000
+    },
+    {
+        "name": "GalaxyWars",
+        "description": "A space-based strategy game with a P2E (Play-to-Earn) model.",
+        "ranking": 4.3,
+        "totalPlayers": 11000
+    },
+    {
+        "name": "FantasyTrader",
+        "description": "A trading card game with a fantasy theme and NFT cards.",
+        "ranking": 4.1,
+        "totalPlayers": 7500
+    },
+    {
+        "name": "ZombieLand",
+        "description": "Survive the zombie apocalypse and earn crypto rewards.",
+        "ranking": 3.8,
+        "totalPlayers": 5000
+    },
+    {
+        "name": "CryptoGolf",
+        "description": "A golf simulation game where players earn tokens for achievements.",
+        "ranking": 4.4,
+        "totalPlayers": 6200
+    },
+    {
+        "name": "BattleRoyaleX",
+        "description": "A blockchain-based battle royale with NFT weapons.",
+        "ranking": 4.2,
+        "totalPlayers": 12000
+    },
+    {
+        "name": "MagicRunes",
+        "description": "A fantasy RPG with collectible runes as NFTs.",
+        "ranking": 4.5,
+        "totalPlayers": 10000
+    },
+    {
+        "name": "AlienInvasion",
+        "description": "Defend Earth from alien attacks in this blockchain game.",
+        "ranking": 4.0,
+        "totalPlayers": 8000
+    },
+    {
+        "name": "FarmNFT",
+        "description": "Manage a virtual farm and trade NFT crops and animals.",
+        "ranking": 4.3,
+        "totalPlayers": 9500
+    },
+    {
+        "name": "CyberHeist",
+        "description": "Pull off high-stakes heists in a futuristic cyber world.",
+        "ranking": 3.7,
+        "totalPlayers": 5400
+    },
+    {
+        "name": "DragonRealm",
+        "description": "Raise and train dragons in a mythical realm with NFTs.",
+        "ranking": 4.6,
+        "totalPlayers": 13000
+    },
+    {
+        "name": "RobotWars",
+        "description": "Design and battle robots with other players for rewards.",
+        "ranking": 4.1,
+        "totalPlayers": 7500
+    },
+    {
+        "name": "IslandQuest",
+        "description": "Explore tropical islands and find hidden NFT treasures.",
+        "ranking": 4.4,
+        "totalPlayers": 6800
+    },
+    {
+        "name": "CryptoKart",
+        "description": "A racing game with customizable NFT karts and avatars.",
+        "ranking": 4.2,
+        "totalPlayers": 9400
+    }
+]

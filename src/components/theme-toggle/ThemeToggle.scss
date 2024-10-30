@@ -1,0 +1,11 @@
+.theme-toggle-btn {
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-16);
+  font-family: sans-serif;
+  color: inherit;
+  font-weight: bold;
+}

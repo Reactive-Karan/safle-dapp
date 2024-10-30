@@ -1,0 +1,26 @@
+.banner-container {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  .banner-text-wrapper {
+    .banner-text-heading {
+      font-size: var(--font-size-52);
+
+      .banner-nft-text {
+        color: var(--secondary-color);
+      }
+    }
+  }
+  .banner-image {
+    img {
+      border-radius: 50px;
+      width: 100%;
+      box-shadow: var(--dark-box-shadow);
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

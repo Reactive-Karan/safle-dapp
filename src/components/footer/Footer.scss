@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--black);
+  width: 100%;
+}
+
+body.dark-mode {
+  .footer {
+    color: var(--pure-white);
+  }
+}
